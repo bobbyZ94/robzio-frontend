@@ -24,7 +24,7 @@ export default function About({ Frontpage }: { Frontpage: FrontpageType }) {
   })
 
   return (
-    <div className="flex flex-col items-center justify-center w-full">
+    <div className="flex flex-col items-center justify-center w-full tracking-wider">
       {/**
        * Hero with border effect
        */}

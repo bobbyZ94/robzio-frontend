@@ -8,7 +8,7 @@ export default async function Footer() {
   const year = new Date().getFullYear()
   return (
     <div className="flex flex-col items-center justify-center gap-5 my-10 font-semibold tracking-wider">
-      <div className="sm:mb-5 hover:text-transparent hover:bg-gradient-to-r from-blue-600 to-yellow-600 bg-clip-text">
+      <div className="duration-200 ease-in-out sm:mb-5 hover:text-transparent bg-gradient-to-r from-blue-600 to-yellow-600 bg-clip-text">
         <a href={`mailto:${Settings.email}`}>
           <span className="text-white">{mailResponsive}</span>
           {Settings.email}
@@ -16,25 +16,25 @@ export default async function Footer() {
       </div>
       <div className="flex flex-col gap-5 text-center sm:flex-row sm:mb-5">
         <Link
-          className="hover:text-transparent hover:bg-gradient-to-r from-blue-600 to-yellow-600 bg-clip-text"
+          className="duration-200 ease-in-out hover:text-transparent bg-gradient-to-r from-blue-600 to-yellow-600 bg-clip-text"
           href="/#about"
         >
           About
         </Link>
         <Link
-          className="hover:text-transparent hover:bg-gradient-to-r from-blue-600 to-yellow-600 bg-clip-text"
+          className="duration-200 ease-in-out hover:text-transparent bg-gradient-to-r from-blue-600 to-yellow-600 bg-clip-text"
           href="/#projects"
         >
           Projects
         </Link>
         <Link
-          className="hover:text-transparent hover:bg-gradient-to-r from-blue-600 to-yellow-600 bg-clip-text"
+          className="duration-200 ease-in-out hover:text-transparent bg-gradient-to-r from-blue-600 to-yellow-600 bg-clip-text"
           href="/#blog"
         >
           Blog
         </Link>
         <Link
-          className="hover:text-transparent hover:bg-gradient-to-r from-blue-600 to-yellow-600 bg-clip-text"
+          className="duration-200 ease-in-out hover:text-transparent bg-gradient-to-r from-blue-600 to-yellow-600 bg-clip-text"
           href="/#contact"
         >
           Contact

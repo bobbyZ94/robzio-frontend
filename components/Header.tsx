@@ -38,25 +38,25 @@ export default function Header() {
         <div className="hidden gap-5 font-semibold tracking-wider sm:flex">
           <Link
             href="/#about"
-            className="hover:text-transparent hover:bg-gradient-to-r from-blue-600 to-yellow-600 bg-clip-text"
+            className="duration-200 ease-in-out hover:text-transparent bg-gradient-to-r from-blue-600 to-yellow-600 bg-clip-text"
           >
             About
           </Link>
           <Link
             href="/#projects"
-            className="hover:text-transparent hover:bg-gradient-to-r from-blue-600 to-yellow-600 bg-clip-text"
+            className="duration-200 ease-in-out hover:text-transparent bg-gradient-to-r from-blue-600 to-yellow-600 bg-clip-text"
           >
             Projects
           </Link>
           <Link
             href="/#blog"
-            className="hover:text-transparent hover:bg-gradient-to-r from-blue-600 to-yellow-600 bg-clip-text"
+            className="duration-200 ease-in-out hover:text-transparent bg-gradient-to-r from-blue-600 to-yellow-600 bg-clip-text"
           >
             Blog
           </Link>
           <Link
             href="/#contact"
-            className="hover:text-transparent hover:bg-gradient-to-r from-blue-600 to-yellow-600 bg-clip-text"
+            className="duration-200 ease-in-out hover:text-transparent bg-gradient-to-r from-blue-600 to-yellow-600 bg-clip-text"
           >
             Contact
           </Link>
