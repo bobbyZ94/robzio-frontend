@@ -1,0 +1,3 @@
+- add head favicon etc
+- add links to footer
+- change api key to read only editor role

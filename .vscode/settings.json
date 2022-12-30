@@ -1,0 +1,11 @@
+{
+  "workbench.colorCustomizations": {
+    "editor.selectionBackground": "#525655",
+    "editor.wordHighlightBackground": "#525655",
+    "activityBar.background": "#581030",
+    "titleBar.activeBackground": "#7B1643",
+    "titleBar.activeForeground": "#FEFCFD"
+  },
+  "typescript.tsdk": "node_modules\\typescript\\lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true
+}

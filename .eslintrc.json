@@ -1,3 +1,42 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "wesbos/typescript"
+  ],
+  "rules": {
+    // basic
+    "no-console": 2,
+    "global-require": 0,
+    "import/no-extraneous-dependencies": 0,
+    "default-param-last": 0,
+    // react
+    "react/destructuring-assignment": 0,
+    "jsx-a11y/no-noninteractive-tabindex": 0,
+    "react/prop-types": 0,
+    "react/no-danger": 0,
+    // typescript
+    "typescript/no-explicit-any": 0,
+    "@typescript-eslint/no-unsafe-argument": 0,
+    "@typescript-eslint/no-shadow": 0,
+    "@typescript-eslint/no-unsafe-return": 0,
+    "@typescript-eslint/no-unsafe-assignment": 0,
+    "@typescript-eslint/no-unsafe-member-access": 0,
+    "@typescript-eslint/no-unsafe-call": 0,
+    "@typescript-eslint/no-var-requires": 0,
+    "@typescript-eslint/no-empty-interface": 0,
+    "@typescript-eslint/ban-types": 0,
+    "@typescript-eslint/default-param-last": 0,
+    // prettier
+    "prettier/prettier": [
+      "error",
+      {
+        "trailingComma": "es5",
+        "singleQuote": true,
+        "printWidth": 120,
+        "tabWidth": 2,
+        "endOfLine": "auto",
+        "semi": false,
+        "prettier.bracketSpacing": true
+      }
+    ]
+  }
 }
