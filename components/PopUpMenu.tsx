@@ -18,7 +18,7 @@ const PopUpMenu = ({
     if (e.currentTarget.dataset.link === pathname) {
       setMenuOpen(!menuOpen)
     } else {
-      router.push(e.currentTarget.dataset.link ?? '') // Typeguard with nullish operator, so its never undefined
+      router.push(e.currentTarget.dataset.link ?? '')
     }
   }
   return (
@@ -30,7 +30,7 @@ const PopUpMenu = ({
         duration: 0.6,
         ease: 'linear',
       }}
-      className="fixed top-0 w-full h-screen text-3xl text-center bg-black pt-36"
+      className="fixed top-0 z-10 w-full h-screen text-3xl text-center bg-black pt-36"
     >
       <ul>
         <li

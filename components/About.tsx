@@ -1,21 +1,13 @@
 'use client'
 
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
-import { motion, Variants } from 'framer-motion'
-import { FrontpageType } from '../typings.d'
+import { motion } from 'framer-motion'
+import { FrontpageDataType } from '../typings.d'
+import { arrowDown } from './SvgComponents'
 
-const parentVariant: Variants = {
-  animate: { transition: { staggerChildren: 1 } },
-}
-
-const childrenVariant: Variants = {
-  initial: { opacity: 0, x: -250 },
-  animate: { opacity: 1, x: 0, transition: { duration: 0.6, ease: 'linear' } },
-}
-
-export default function About({ Frontpage }: { Frontpage: FrontpageType }) {
+export default function About({ FrontpageData }: { FrontpageData: FrontpageDataType }) {
   const keywordsArray: string[] = []
-  Frontpage.keywords.forEach((keyword) => keywordsArray.push(keyword.keyword))
+  FrontpageData.keywords.forEach((keyword) => keywordsArray.push(keyword.keyword))
 
   const [keywordsTypewriter] = useTypewriter({
     words: keywordsArray,
@@ -24,25 +16,34 @@ export default function About({ Frontpage }: { Frontpage: FrontpageType }) {
   })
 
   return (
-    <div className="flex flex-col items-center justify-center w-full tracking-wider">
+    <div id="about" className="flex flex-col items-center h-screen tracking-wider justify-evenly snap-center">
       {/**
        * Hero with border effect
        */}
-      <div>
-        <div className="relative mt-20 cursor-pointer group">
+      <div className="">
+        <div className="relative cursor-pointer group">
           <motion.div
             animate={{ opacity: [0.5, 1, 0.5] }}
             transition={{ repeat: Infinity, duration: 4, ease: 'easeInOut' }}
             className="absolute -inset-0.5 rounded-lg blur bg-gradient-to-r from-blue-600 to-yellow-600"
           />
           <div className="relative p-3 text-6xl font-bold tracking-wider uppercase bg-black rounded-lg sm:text-9xl">
-            {Frontpage.hero}
+            {FrontpageData.hero}
           </div>
         </div>
       </div>
-      <div className="mt-20 text-3xl uppercase sm:text-7xl">
+      {/**
+       * Typewriter with keywords
+       */}
+      <div className="text-3xl uppercase justify-self-center sm:text-7xl">
         {keywordsTypewriter}
         <Cursor cursorColor="white" />
+      </div>
+      {/**
+       * Scroll indicator arrow with bounce animation
+       */}
+      <div className="animate-bounce">
+        <a href="/#projects">{arrowDown}</a>
       </div>
     </div>
   )
