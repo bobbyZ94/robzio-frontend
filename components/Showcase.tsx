@@ -8,7 +8,7 @@ import { ShowcaseDataType } from '../typings.d'
 
 export default function Showcase({ ShowcaseData }: { ShowcaseData: ShowcaseDataType }) {
   return (
-    <div id="projects" className="flex flex-col items-center justify-center h-screen gap-10 snap-center">
+    <div id="projects" className="flex flex-col items-center h-screen gap-5 justify-evenly snap-center scroll-smooth">
       <div className="uppercase">
         <motion.div
           className="text-3xl"
@@ -29,20 +29,21 @@ export default function Showcase({ ShowcaseData }: { ShowcaseData: ShowcaseDataT
           {ShowcaseData.subtitle}
         </motion.div>
       </div>
-      <div className="max-w-[30rem] max-h-[30rem] mx-5 relative">
+      <div className="mx-5 h-[15rem]">
         <Carousel loop autoPlay interval={5000}>
           {ShowcaseData.images.map((image) => (
             <Image
               draggable="false"
               src={image.image.url}
               alt={image.image.titel}
-              width={1000}
-              height={1000}
-              className=""
+              width={Number(image.image.width)}
+              height={Number(image.image.height)}
+              className="object-cover w-full h-full"
             />
           ))}
         </Carousel>
       </div>
+
       <div className="px-5 prose-sm lg:prose-xl prose-ul:list-disc prose-ol:list-decimal hover:prose-a:underline">
         {serialize(ShowcaseData.text)}
       </div>

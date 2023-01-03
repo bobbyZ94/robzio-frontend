@@ -11,12 +11,12 @@ export default async function Footer() {
       id="footer"
       className="flex flex-col items-center justify-center w-full gap-5 py-10 font-semibold tracking-wider bg-black snap-center"
     >
-      <div className="duration-200 ease-in-out sm:mb-5 hover:text-transparent bg-gradient-to-r from-blue-600 to-yellow-600 bg-clip-text">
+      {/* <div className="duration-200 ease-in-out sm:mb-5 hover:text-transparent bg-gradient-to-r from-blue-600 to-yellow-600 bg-clip-text">
         <a href={`mailto:${Settings.email}`}>
           <span className="text-white">{mailResponsive}</span>
           {Settings.email}
         </a>
-      </div>
+      </div> */}
       {/* <div className="flex flex-col gap-5 text-center sm:flex-row sm:mb-5">
         <Link
           className="duration-200 ease-in-out hover:text-transparent bg-gradient-to-r from-blue-600 to-yellow-600 bg-clip-text"

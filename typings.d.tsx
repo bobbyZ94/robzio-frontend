@@ -1,5 +1,3 @@
-import React from 'react'
-
 export interface SettingsDataType {
   title: string
   description: string
@@ -45,5 +43,6 @@ export interface ShowcaseDataType {
 }
 
 export interface ContactDataType {
-  text: string
+  text: [object]
+  email: string
 }

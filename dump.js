@@ -20,3 +20,17 @@
           <div className="h-screen snap-center">Child1</div>
           <div className="h-screen snap-center">Child2</div>
         </div>
+
+
+<Carousel loop autoPlay interval={5000}>
+          {ShowcaseData.images.map((image) => (
+            <Image
+              draggable="false"
+              src={image.image.url}
+              alt={image.image.titel}
+              width={Number(image.image.width)}
+              height={Number(image.image.height)}
+              className="object-cover"
+            />
+          ))}
+        </Carousel>
