@@ -16,7 +16,7 @@ export default function About({ FrontpageData }: { FrontpageData: FrontpageDataT
   })
 
   return (
-    <div id="about" className="flex flex-col items-center h-screen tracking-wider justify-evenly snap-center">
+    <div id="about" className="flex flex-col items-center h-screen tracking-wider justify-evenly snap-start">
       {/**
        * Hero with border effect
        */}

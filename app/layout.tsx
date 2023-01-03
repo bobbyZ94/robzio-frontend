@@ -17,7 +17,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       */}
       <head />
       <body className="bg-black text-gray-50 scrollbar-none scroll-smooth">
-        <div className="">
+        <div className="z-20">
           <Header />
         </div>
 

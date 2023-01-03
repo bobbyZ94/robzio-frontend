@@ -29,18 +29,18 @@ export interface FrontpageDataType {
 export interface ShowcaseDataType {
   title: string
   subtitle: string
-  image1: {
-    width: number
-    height: number
-    url: string
-    titel: string
-  }
-  image2: {
-    width: number
-    height: number
-    url: string
-    titel: string
-  }
+  images: [
+    {
+      link: string
+      title: string
+      image: {
+        width: string
+        height: string
+        url: string
+        titel: string
+      }
+    }
+  ]
   text: [object]
 }
 
